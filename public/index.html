@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Home Dashboard</title>
+    <link rel="stylesheet" href="../smart-home-dashboard.css">
+</head>
+<body>
+    <div id="root"></div>
+    <script src="../src/index.js"></script>
+</body>
+</html>
+
+src/index.js
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
+
+ReactDOM.render(<App />, document.getElementById('root'));
+
+src/App.js
+import React from 'react';
+import SmartHomeDashboard from './components/SmartHomeDashboard';
+
+const App = () => (
+    <div>
+        <SmartHomeDashboard />
+    </div>
+);
+
+export default App;
